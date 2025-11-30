@@ -1,1 +1,27 @@
-!
+name: neon_shadow_vpn
+description: WireGuard-based VPN with style.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  provider: ^6.1.0          # тема
+  shared_preferences: ^2.2.2 # сохраняем ключ
+  path_provider: ^2.1.1      # кэш
+  http: ^1.1.0               # скачать конфиг при надобности
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
